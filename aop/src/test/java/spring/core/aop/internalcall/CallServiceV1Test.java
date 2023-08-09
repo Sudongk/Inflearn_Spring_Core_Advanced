@@ -16,6 +16,7 @@
 //    @Autowired
 //    CallServiceV1 callServiceV1;
 //
+//    // 순환 참조로 인해 테스트 실패
 //    @Test
 //    void external() {
 //        callServiceV1.external();
