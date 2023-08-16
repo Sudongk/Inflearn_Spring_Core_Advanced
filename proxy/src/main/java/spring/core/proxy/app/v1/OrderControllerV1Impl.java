@@ -18,4 +18,5 @@ public class OrderControllerV1Impl implements OrderControllerV1 {
     public String noLog() {
         return "ok";
     }
+
 }
