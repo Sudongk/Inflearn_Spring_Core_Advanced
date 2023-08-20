@@ -9,13 +9,19 @@ import spring.core.proxy.config.AppV2Config;
 import spring.core.proxy.config.v1_proxy.ConcreteProxyConfig;
 import spring.core.proxy.config.v1_proxy.InterfaceProxyConfig;
 import spring.core.proxy.config.v2_dynamicproxy.DynamicProxyFilterConfig;
+import spring.core.proxy.config.v3_proxyfactory.ProxyFactoryConfigV1;
 import spring.core.proxy.trace.logtrace.LogTrace;
 import spring.core.proxy.trace.logtrace.ThreadLocalLogTrace;
 
 //@Import({AppV1Config.class, AppV2Config.class})
 //@Import(InterfaceProxyConfig.class)
 //@Import(ConcreteProxyConfig.class)
-@Import(DynamicProxyFilterConfig.class)
+//@Import(DynamicProxyFilterConfig.class)
+@Import(ProxyFactoryConfigV1.class)
+//@Import(ProxyFactoryConfigV2.class)
+//@Import(BeanPostProcessorConfig.class)
+//@Import(AutoProxyConfig.class)
+//@Import(AopConfig.class)
 @SpringBootApplication(scanBasePackages = "spring.core.proxy.app")
 public class ProxyApplication {
 
